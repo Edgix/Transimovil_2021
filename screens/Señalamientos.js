@@ -1,11 +1,12 @@
 import * as React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { ImageBackground, Text, View, StyleSheet, Image } from 'react-native';
 import { Image } from 'react-native-elements';
 import { Text } from 'react-native-elements';
 
 export default function Señalamientos() {
     return (
 <View style={{ top:40, flex:1, flexDirection:"column", alignItems:"center", }}>
+<ImageBackground source={require('../assets/señalfondo.jpg')} resizeMode="cover" style={styles.image}>
     <Text h2>Preventivas</Text>
     <Image
   source={ require('../assets/preventivas/bifurcacion.png')}
@@ -149,3 +150,10 @@ export default function Señalamientos() {
     </View>
     );
   }
+  const styles = StyleSheet.create({
+ 
+  image: {
+    flex: 1,
+    justifyContent: "center"
+  }
+});
