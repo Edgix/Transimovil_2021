@@ -7,7 +7,7 @@ export default function Señalamientos() {
 <View style={{ top:40, flex:1, flexDirection:"column", alignItems:"center", }}>
 
     <Image
-  source={ require('../assets/preventivas/curva.png')}
+  source={ require('../assets/preventivas/Curva.png')}
   style={{width: 100, height: 100 }}
 />
       <Text>Preventiva</Text>
